@@ -1,0 +1,29 @@
+server: 
+  port: 8101
+spring: 
+  application: 
+    name: cgiexercise
+  batch: 
+    job: 
+      enabled: false
+  activemq:
+    in-memory: true
+    pool:
+      enabled: false
+logging: 
+  file: /cgi/exercise/logs/cgiexercise
+  level:
+    ROOT: INFO
+    com.cgi.exercise: INFO
+    com.cgi.exercise.rest.core: DEBUG
+### YouTube Data API Config ###
+api:
+  yt:
+    key: AIzaSyA27cZzAtYXophbUewykQE8aHPfidnzXrQ
+    watchUrl: "https://www.youtube.com/watch"
+    searchUrl: "https://www.googleapis.com/youtube/v3/search"
+    searchType: video
+    searchPart: snippet
+    maxResults: 1
+    
+    
